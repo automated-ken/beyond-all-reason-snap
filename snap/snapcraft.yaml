@@ -1,7 +1,7 @@
 name: beyond-all-reason
 base: core24
 title: Beyond All Reason
-version: '0.17.0'
+version: '0.17.1'
 summary: Beyond All Reason - a free, open-source real-time strategy game
 license: GPL-2.0-or-later
 contact: https://github.com/kenvandine/beyonad-all-reason/issues
@@ -52,6 +52,7 @@ parts:
     plugin: dump
     source: https://github.com/beyond-all-reason/bar-lobby/releases/download/v$SNAPCRAFT_PROJECT_VERSION/BeyondAllReason-$SNAPCRAFT_PROJECT_VERSION.AppImage
     source-type: file
+    source-tag: v0.17.1
     override-build: |
       chmod +x "$SNAPCRAFT_PART_SRC"/BeyondAllReason-*.AppImage
       "$SNAPCRAFT_PART_SRC"/BeyondAllReason-*.AppImage --appimage-extract
